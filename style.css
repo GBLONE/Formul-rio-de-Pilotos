@@ -35,6 +35,7 @@ body{
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
+    background-image: linear-gradient(to bottom, transparent 0%, #33afe9 25%), url(https://static.vecteezy.com/system/resources/thumbnails/000/103/376/small/crosshatch-style-background-pattern.jpg);
 }
 
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
@@ -118,4 +119,19 @@ fieldset.grupo .campo {
 /* Elementos de classe botão e de tag <select> */
 .botao, select{
     cursor: pointer;
+}
+
+#ladoalado {
+    display: flex;
+    justify-content: center;
+  }
+  
+#ladoalado img:not(:last-child) {
+    margin-right: 50%;
+}
+
+.imagem1{
+    position: left;
+    justify-content: left;
+    margin-left: -60%;
 }
