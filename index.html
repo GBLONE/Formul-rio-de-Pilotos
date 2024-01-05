@@ -9,19 +9,25 @@
 <body>
 
     <div>
-        <h1 id="titulo">Cadastro de Pilotos</h1>
-        <p id="subtitulo">Complete sua informações:</p>
+        <h1 id="titulo"><strong>Pilotos</strong></h1>
+        <p id="subtitulo"><strong>Complete sua informações:</strong></p>
         <br>
     </div>
 
-    <div id="ladoalado">
-        <img class="imagem1" height="480" src="Nascar2.jpg">
-        <img class="imagem2" height="480" src="FormulaOne.jpg">
+    <div>
+        <div id="ladoalado1">
+            <img class="imagem1" height="480" src="Nascar2.jpg">
+            <img class="imagem2" height="480" src="FormulaOne.jpg">
+        </div>
+        <div id="ladoalado2">
+            <img class="imagem3" height="480" src="Rally WRC.jpg">
+            <img class="imagem4" height="480" src="Nascar.jpg">
+        </div>
     </div><br>
 
     <form class="formulario">
         <fieldset class="grupo">
-            <div>
+            <div class="campo">
                 <label for="nome"><strong>*Nome:</strong></label>
                 <input type="text" Nome="nome" id="nome" required>
             </div>
@@ -40,7 +46,10 @@
         <div class="campo">
             <label><strong>Sua Categoria:</strong></label>
             <label>
-                <input type="radio" name="categoria" value="Fórmula 1" checked>Fórmula 1
+                <input type="radio" name="categoria" value="Amador" checked>Amador(a)
+            </label>
+            <label>
+                <input type="radio" name="categoria" value="Fórmula 1">Fórmula 1
             </label>
             <label>
                 <input type="radio" name="categoria" value="Nascar">Nascar
