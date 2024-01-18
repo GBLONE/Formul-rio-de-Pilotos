@@ -8,7 +8,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #4a8cc5;
     font-style: oblique;
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 15%;
     margin-top: -2%;
     
@@ -19,10 +19,10 @@
     font-style: oblique;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #5e5e5e;
-    margin-left: 10%;
+    color: #bfd7ec;
+    margin-left: auto;
     filter: drop-shadow(12px 12px 8px #4a8cc5);
-} 
+}
 
 #check{
     display: inline-block;
@@ -38,16 +38,42 @@ body{
     background-color: #010500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1em;
-    color: #bfd7ec;
+    color: #bfd7ec; /* #bfd7ec*/
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
-    background-image: linear-gradient(to bottom, transparent 6%, #193044 9%), url(https://static.vecteezy.com/system/resources/thumbnails/000/103/376/small/crosshatch-style-background-pattern.jpg);
+    background: linear-gradient(217deg, rgba(76, 0, 255, 0), rgb(76, 0, 255) 70.71%),
+            linear-gradient(336deg, rgba(48, 48, 107, 0.8), rgba(0,0,255,0) 100%);
+                
+    /*background-image: linear-gradient(to bottom, transparent 6%, #193044 15%), url(https://static.vecteezy.com/system/resources/thumbnails/000/103/376/small/crosshatch-style-background-pattern.jpg);
+    */
 }
 
 .formulario{
+    position: relative;
+    margin-top: 0%;
+}
+
+.riscoDireita {
+    content: "";
+    position: relative;
+    border-bottom: 3px solid #bfd7ec;
+    display: flex;
+    justify-content: left;
+    width: 419px;
+    right: 0px;
+    top: auto;
+}
+
+.riscoSub {
+    content: "";
     position: absolute;
-    margin-top: -72%;
+    border-bottom: 3px solid #bfd7ec;
+    display: flex;
+    justify-content: left;
+    width: 419px;
+    right: auto;
+    top: auto;
 }
 
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
@@ -115,7 +141,7 @@ fieldset.grupo .campo {
     background: #4a8cc5;
     border: 0;
     margin-bottom: 1em;
-    color: #000000;
+    color: #bfd7ec;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -123,12 +149,13 @@ fieldset.grupo .campo {
     top: 95%;
     left: 25%;
     margin-right: -50%;
-    transform: translate(45%, -20%)
+    transform: translate(-50%, -20%)
 }
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
     background: #bfd7ec;
+    color:#4a8cc5;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
     filter: drop-shadow(12px 12px 8px #4a8cc5);
@@ -139,7 +166,7 @@ fieldset.grupo .campo {
     cursor: pointer;
 }
 
-#ladoalado1 {
+/* #ladoalado1 {
     display: flex;
     justify-content: center;
   }
@@ -201,7 +228,7 @@ fieldset.grupo .campo {
     filter: drop-shadow(-12px 12px 8px #4a8cc5);
     
 }
-
+ */
 #profissionalismo {
     color: #5e5e5e;
 }
