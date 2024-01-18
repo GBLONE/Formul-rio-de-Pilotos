@@ -7,9 +7,11 @@ capita as experiências, vontades, sonhos, etc, e se ajudam uns aos outros!
 As imagens utilizadas nesse site foram gerada por IA do bing, que hoje se chama Copilot: <br><br>
 
 <div>
-  <img align="center" alt="Formulário de Pilotos" height="600" width="800" src="https://cdn.discordapp.com/attachments/790006256844406815/1194001187540836432/Formulario_HTML_e_CSS_pt1.png?ex=65aec342&is=659c4e42&hm=d19a6342071d6eb7d15f1e06b0bb0524e6eea38249567f720ee99d8712a27e30&"><br><br>
+  <img align="center" alt="Formulário de Pilotos" height="600" width="1200" src="https://cdn.discordapp.com/attachments/606600887707762755/1197612865104908409/image.png?ex=65bbe6e5&is=65a971e5&hm=8206f12dda22a4dc0fbd0ebfb32eb2809bc471f09b4a0103a88185f8ae6195b1&"><br><br>
   
-  <img align="center" alt="Formulário de Pilotos" height="600" width="800" src="https://cdn.discordapp.com/attachments/790006256844406815/1194001188027383848/Formulario_HTML_e_CSS_pt2.png?ex=65aec342&is=659c4e42&hm=5e033fdf16f7dbbacdc591186d45209fb5cbaa426c91a761f782594a9cf7852a&"><br>
+  <img align="center" alt="Formulário de Pilotos" height="600" width="1200" src="https://cdn.discordapp.com/attachments/606600887707762755/1197613005492453436/image.png?ex=65bbe707&is=65a97207&hm=381d475b21ada8da3cf5962b2cae22828d03a953e26bb8e76acefed25d4a43cb&"><br>
+
+  <img align="center" alt="Formulário de Pilotos" height="600" width="1200" src="https://cdn.discordapp.com/attachments/606600887707762755/1197613152678977576/image.png?ex=65bbe72a&is=65a9722a&hm=8ca1e93aa09648b9d094ecacc07db969ef16621afdacebd82daffa451bf451f5&"><br>
 </div>
 
 ##
