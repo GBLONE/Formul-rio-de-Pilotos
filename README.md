@@ -10,7 +10,9 @@ Sempre gostei do automobilismo em geral, mas em especial sempre gostei mais da F
 
 https://github.com/GBLONE/Formul-rio-de-Pilotos/assets/100142139/e341b42d-fe7a-47c3-928f-3043861a5dd4
 
-
+<br>
+Se caso estiver ruim o vídeo, acesse meu LinkedIn:<br>
+<a href="https://www.linkedin.com/posts/gabriel-oliveira-607682231_cadastro-de-pilotos-html-e-css-activity-7169038818610790401-OOo9?utm_source=share&utm_medium=member_desktop" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
 ##
 Aos poucos irei colocando novas equipes!
