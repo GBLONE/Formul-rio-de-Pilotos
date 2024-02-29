@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <title>Cadastro de Pilotos</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Pilotos</title>
+  </head>
+  <div>
+    <h1  id="titulo"><strong>Cadastro de Pilotos</strong></h1>
+    <br/><br />
+  </div>
+  <body>
 
-    <div>
-        <h1 id="titulo"><strong>Pilotos</strong></h1>
-        <p id="subtitulo" class="riscoSub"><strong>Complete suas informações:</strong></p>
-        <br><br>
-    </div>
-
-<!--Aqui era as Imagens
+    <!--Aqui era as Imagens
     <div>
         <div id="ladoalado1">
             <img class="imagem1" height="480" src="Nascar2.jpg">
@@ -26,178 +24,473 @@
         </div>
     </div><br>
 -->
-
-    <form class="formulario">
+  <p id="subtitulo" class="riscoSub">
+    Complete suas informações:
+  </p>
+    <div class="container">
+      <form class="formulario">
         <fieldset class="grupo">
-            <div class="campo">
-                <label for="nome"><strong>*Nome:</strong></label>
-                <input type="text" Nome="nome" id="nome" required>
-            </div>
+          <div class="campo">
+            <label for="nome">*Nome:</label>
+            <input type="text" Nome="nome" id="nome" required />
+          </div>
 
-            <div class="campo">
-                <label for="sobrenome"><strong>*Sobrenome:</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-            </div>
+          <div class="campo">
+            <label for="sobrenome">*Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" required />
+          </div>
         </fieldset>
 
         <div class="campo">
-            <label for="email"><strong>*Email:</strong></label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        
-        <div class="campo">
-            <label class="riscoDireita"><strong>Sua Categoria:</strong></label>
-            <label>
-                <input type="radio" name="categoria" value="Fórmula 1" checked>Fórmula 1
-            </label>
-            <label>
-                <input type="radio" name="categoria" value="Nascar">Nascar
-            </label>
-            <label>
-                <input type="radio" name="categoria" value="StockCar">Stock Car Pro Series
-            </label>
-            <label>
-                <input type="radio" name="categoria" value="Rally">Rally WRC
-            </label>
-            <label>
-                <input type="radio" name="categoria" value="Amador">Amador(a)
-            </label>
+          <label for="email">*Email:</label>
+          <input type="email" name="email" id="email" required />
         </div>
 
         <div class="campo">
-            <label for="profissionalismo" class="riscoDireita"><strong>Selecione seu Profissionalismo:</strong></label><br>
-            <select id="profissionalismo">
-                <option selected disabled value="">Selecione</option>
-                <option>Amador(a)</option>
-                <option>Júnior</option>
-                <option>Profissional</option>
-                <option>Veterano</option>
-            </select>
+          <label class="riscoDireita">Sua Categoria:</label><br>
+          <label>
+            <input
+              type="radio"
+              name="categoria"
+              value="Fórmula 1"
+              checked
+            />Fórmula 1
+          </label>
+          <label>
+            <input type="radio" name="categoria" value="Nascar" />Nascar
+          </label>
+          <label>
+            <input type="radio" name="categoria" value="StockCar" />Stock Car
+            Pro Series
+          </label>
+          <label>
+            <input type="radio" name="categoria" value="Rally" />Rally WRC
+          </label>
+          <label>
+            <input type="radio" name="categoria" value="Amador" />Amador(a)
+          </label>
+        </div>
+
+        <div class="campo">
+          <label for="profissionalismo" class="riscoDireita"
+            >Selecione seu Profissionalismo:</label
+          ><br />
+          <select id="profissionalismo">
+            <option selected disabled value="">Selecione</option>
+            <option>Amador(a)</option>
+            <option>JÚnior</option>
+            <option>Profissional</option>
+            <option>Veterano</option>
+          </select>
         </div>
 
         <fieldset class="grupo">
-            <div id="check">
-                <label class="riscoDireita"><strong>Selecione a Equipe que trabalha (ou trabalhou):</strong></label><br>
-                <label><strong>Fórmula 1</strong></label><br>
-                <input type="checkbox" id="ferrari" name="ferrari" value="ferrari">
-                <label for="ferrari">Scuderia Ferrari</label><br>
-                <input type="checkbox" id="RedBull" name="RedBull" value="RedBull">
-                <label for="RedBull">Oracle Red Bull Racing</label><br>
-                <input type="checkbox" id="Mercedes" name="Mercedes" value="Mercedes">
-                <label for="Mercedes">Mercedes-AMG Petronas F1 Team</label><br>
-                <input type="checkbox" id="mclaren" name="mclaren" value="mclaren">
-                <label for="mclaren">McLaren F1 Team</label><br>
-                <input type="checkbox" id="astonmartin" name="astonmartin" value="astonmartin">
-                <label for="astonmartin">Aston Martin Aramco Cognizant F1 Team</label><br>
-                <input type="checkbox" id="Haas" name="Haas" value="Haas">
-                <label for="Haas">Haas F1 Team</label><br>
-                <input type="checkbox" id="alfaromeo" name="alfaromeo" value="alfaromeo">
-                <label for="alfaromeo">Alfa Romeo F1 Team</label><br>
-                <input type="checkbox" id="alphatauri" name="alphatauri" value="alphatauri">
-                <label for="alphatauri">Scuderia AlphaTauri</label><br>
-                <input type="checkbox" id="williams" name="williams" value="williams">
-                <label for="williams">Williams Racing</label><br>
-                <input type="checkbox" id="Alpine" name="Alpine" value="Alpine">
-                <label for="Alpine">BTW Alpine F1 Team</label><br><br>
-                <label><strong>Nascar</strong></label><br>
-                <input type="checkbox" id="Legacy Motor Club" name="Legacy Motor Club" value="Legacy Motor Club">
-                <label for="Legacy Motor Club">Legacy Motor Club</label><br>
-                <input type="checkbox" id="Spire Motorsports" name="Spire Motorsports" value="Spire Motorsports">
-                <label for="Spire Motorsports">Spire Motorsports</label><br>
-                <input type="checkbox" id="Kaulig Racing" name="Kaulig Racing" value="Kaulig Racing">
-                <label for="Kaulig Racing">Kaulig Racing</label><br>
-                <input type="checkbox" id="Wood Brothers Racing" name="Wood Brothers Racing" value="Wood Brothers Racing">
-                <label for="Wood Brothers Racing">Wood Brothers Racing</label><br>
-                <input type="checkbox" id="Rick Ware Racing" name="Rick Ware Racing" value="Rick Ware Racing">
-                <label for="Rick Ware Racing">Rick Ware Racing</label><br>
-                <input type="checkbox" id="Richard Childress Racing" name="Richard Childress Racing" value="Richard Childress Racing">
-                <label for="Richard Childress Racing">Richard Childress Racing</label><br>
-                <input type="checkbox" id="Stewart-Haas Racing" name="Stewart-Haas Racing" value="Stewart-Haas Racing">
-                <label for="Stewart-Haas Racing">Stewart-Haas Racing</label><br>
-                <input type="checkbox" id="Front Row Motorsports" name="Front Row Motorsports" value="Front Row Motorsports">
-                <label for="Front Row Motorsports">Front Row Motorsports</label><br>
-                <input type="checkbox" id="JTG Daugherty Racing" name="JTG Daugherty Racing" value="JTG Daugherty Racing">
-                <label for="JTG Daugherty Racing">JTG Daugherty Racing</label><br>
-                <input type="checkbox" id="Trackhouse Racing" name="Trackhouse Racing" value="Trackhouse Racing">
-                <label for="Trackhouse Racing">Trackhouse Racing</label><br>
-                <input type="checkbox" id="RFK Racing" name="RFK Racing" value="RFK Racing">
-                <label for="RFK Racing">RFK Racing</label><br>
-                <input type="checkbox" id="23XI Racing" name="23XI Racing" value="23XI Racing">
-                <label for="23XI Racing">23XI Racing</label><br>
-                <input type="checkbox" id="Joe Gibbs Racing" name="Joe Gibbs Racing" value="Joe Gibbs Racing">
-                <label for="Joe Gibbs Racing">Joe Gibbs Racing</label><br>
-                <input type="checkbox" id="Hendrick Motorsports" name="Hendrick Motorsports" value="Hendrick Motorsports">
-                <label for="Hendrick Motorsports">Hendrick Motorsports</label><br>
-                <input type="checkbox" id="Team Penske" name="Team Penske" value="Team Penske">
-                <label for="Team Penske">Team Penske</label><br><br>
-                <label><strong>Stock Car Pro Series</strong></label><br>
-                <input type="checkbox" id="Eurofarma RC" name="Eurofarma RC" value="Eurofarma RC">
-                <label for="Eurofarma RC">Eurofarma RC</label><br>
-                <input type="checkbox" id="Ipiranga Racing" name="Ipiranga Racing" value="Ipiranga Racing">
-                <label for="Ipiranga Racing">Ipiranga Racing</label><br>
-                <input type="checkbox" id="A. Mattheis Vogel Motorsport" name="A. Mattheis Vogel Motorsport" value="A. Mattheis Vogel Motorsport">
-                <label for="A. Mattheis Vogel Motorsport">A. Mattheis Vogel Motorsport</label><br>
-                <input type="checkbox" id="RCM Motorsports" name="RCM Motorsports" value="RCM Motorsports">
-                <label for="RCM Motorsports">RCM Motorsports</label><br>
-                <input type="checkbox" id="KTF Racing" name="KTF Racing" value="KTF Racing">
-                <label for="KTF Racing">KTF Racing</label><br>
-                <input type="checkbox" id="Lubrax Podium" name="Lubrax Podium" value="Lubrax Podium">
-                <label for="Lubrax Podium">Lubrax Podium</label><br>
-                <input type="checkbox" id="Mobil Ale" name="Mobil Ale" value="Mobil Ale">
-                <label for="Mobil Ale">Mobil Ale</label><br>
-                <input type="checkbox" id="Blau Motorsport" name="Blau Motorsport" value="Blau Motorsport">
-                <label for="Blau Motorsport">Blau Motorsport</label><br>
-                <input type="checkbox" id="Full Time Sports" name="Full Time Sports" value="Full Time Sports">
-                <label for="Full Time Sports">Full Time Sports</label><br>
-                <input type="checkbox" id="Crown Racing/TMG" name="Crown Racing/TMG" value="Crown Racing/TMG">
-                <label for="Crown Racing/TMG">Crown Racing/TMG</label><br>
-                <input type="checkbox" id="Cavaleiro Sports" name="Cavaleiro Sports" value="Cavaleiro Sports">
-                <label for="Cavaleiro Sports">Cavaleiro Sports</label><br>
-                <input type="checkbox" id="Hot Car Competições" name="Hot Car Competições" value="Hot Car Competições">
-                <label for="Hot Car Competições">Hot Car Competições</label><br>
-                <input type="checkbox" id="KFT Sports" name="KFT Sports" value="KFT Sports">
-                <label for="KFT Sports">KFT Sports</label><br>
-                <input type="checkbox" id="Scuderia Chiarelli" name="Scuderia Chiarelli" value="Scuderia Chiarelli">
-                <label for="Scuderia Chiarelli">Scuderia Chiarelli</label><br>
-                <input type="checkbox" id="Texaco Racing" name="Texaco Racing" value="Texaco Racing">
-                <label for="Texaco Racing">Texaco Racing</label><br>
-                <input type="checkbox" id="Pole Motorsport" name="Pole Motorsport" value="Pole Motorsport">
-                <label for="Pole Motorsport">Pole Motorsport</label><br><br>
-                <label><strong>Rally WRC</strong></label><br>
-                <input type="checkbox" id="Citroën Total World Team" name="Citroën Total World Team" value="Citroën Total World Team">
-                <label for="Citroën Total World Team">Citroën Total World Team</label><br>
-                <input type="checkbox" id="BP Ford World Rally Team " name="BP Ford World Rally Team " value="BP Ford World Rally Team">
-                <label for="BP Ford World Rally Team ">BP Ford World  Team</label><br>
-                <input type="checkbox" id="Subaru World Rally Team " name="Subaru World Rally Team " value="Subaru World Rally Team ">
-                <label for="Subaru World Rally Team ">Subaru World Team</label><br>
-                <input type="checkbox" id="Munchi's Ford World Rally Team " name="Munchi's Ford World Rally Team " value="Munchi's Ford World Rally Team ">
-                <label for="Munchi's Ford World Rally Team ">Munchi's Ford World Team</label><br>
-                <input type="checkbox" id="Stobart M-Sport Ford Rally Team" name="Stobart M-Sport Ford Rally Team" value="Stobart M-Sport Ford Rally Team">
-                <label for="Stobart M-Sport Ford Rally Team">Stobart M-Sport Ford Team</label><br>
-                <input type="checkbox" id="OMV-Kronos Citroën World Rally Team" name="OMV-Kronos Citroën World Rally Team" value="OMV-Kronos Citroën World Rally Team">
-                <label for="OMV-Kronos Citroën World Rally Team">OMV-Kronos Citroën World Team</label><br>
-                <input type="checkbox" id="Toyota Gazoo Racing World Team" name="Toyota Gazoo Racing World Team" value="Toyota Gazoo Racing World Team">
-                <label for="Toyota Gazoo Racing World Team">Toyota Gazoo Racing World Team</label><br>
-                <input type="checkbox" id="M-Sport Ford World Rally Team" name="M-Sport Ford World Rally Team" value="M-Sport Ford World Rally Team">
-                <label for="M-Sport Ford World Rally Team">M-Sport Ford World Rally Team</label><br>
-                <input type="checkbox" id="Hyundai Shell Mobis World Rally Team" name="Hyundai Shell Mobis World Rally Team" value="Hyundai Shell Mobis World Rally Team">
-                <label for="Hyundai Shell Mobis World Rally Team">Hyundai Shell Mobis World Rally Team</label><br><br>
-                <input type="checkbox" id="Nenhuma" name="Nenhuma" value="">
-                <label for="Nenhuma">Nenhuma</label><br><br>
-                <!-- Aqui temos que colocar mais Equipes das outras categorias automobilisticas! -->
-                <text>OBS: As demais Equipes serão adcionadas com o tempo!</text>
-                
-            </div>
+          <div id="check">
+            <label class="riscoDireita"
+              >Selecione a Equipe que trabalha (ou trabalhou):</label
+            ><br />
+            <label>Fórmula 1</label
+            ><br />
+            <input
+              type="checkbox"
+              id="ferrari"
+              name="ferrari"
+              value="ferrari"
+            />
+            <label for="ferrari">Scuderia Ferrari</label><br />
+            <input
+              type="checkbox"
+              id="RedBull"
+              name="RedBull"
+              value="RedBull"
+            />
+            <label for="RedBull">Oracle Red Bull Racing</label><br />
+            <input
+              type="checkbox"
+              id="Mercedes"
+              name="Mercedes"
+              value="Mercedes"
+            />
+            <label for="Mercedes">Mercedes-AMG Petronas F1 Team</label><br />
+            <input
+              type="checkbox"
+              id="mclaren"
+              name="mclaren"
+              value="mclaren"
+            />
+            <label for="mclaren">McLaren F1 Team</label><br />
+            <input
+              type="checkbox"
+              id="astonmartin"
+              name="astonmartin"
+              value="astonmartin"
+            />
+            <label for="astonmartin"
+              >Aston Martin Aramco Cognizant F1 Team</label
+            ><br />
+            <input type="checkbox" id="Haas" name="Haas" value="Haas" />
+            <label for="Haas">Haas F1 Team</label><br />
+            <input
+              type="checkbox"
+              id="alfaromeo"
+              name="alfaromeo"
+              value="alfaromeo"
+            />
+            <label for="alfaromeo">Alfa Romeo F1 Team</label><br />
+            <input
+              type="checkbox"
+              id="alphatauri"
+              name="alphatauri"
+              value="alphatauri"
+            />
+            <label for="alphatauri">Scuderia AlphaTauri</label><br />
+            <input
+              type="checkbox"
+              id="williams"
+              name="williams"
+              value="williams"
+            />
+            <label for="williams">Williams Racing</label><br />
+            <input type="checkbox" id="Alpine" name="Alpine" value="Alpine" />
+            <label for="Alpine">BTW Alpine F1 Team</label><br /><br />
+            <label>Nascar</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Legacy Motor Club"
+              name="Legacy Motor Club"
+              value="Legacy Motor Club"
+            />
+            <label for="Legacy Motor Club">Legacy Motor Club</label><br />
+            <input
+              type="checkbox"
+              id="Spire Motorsports"
+              name="Spire Motorsports"
+              value="Spire Motorsports"
+            />
+            <label for="Spire Motorsports">Spire Motorsports</label><br />
+            <input
+              type="checkbox"
+              id="Kaulig Racing"
+              name="Kaulig Racing"
+              value="Kaulig Racing"
+            />
+            <label for="Kaulig Racing">Kaulig Racing</label><br />
+            <input
+              type="checkbox"
+              id="Wood Brothers Racing"
+              name="Wood Brothers Racing"
+              value="Wood Brothers Racing"
+            />
+            <label for="Wood Brothers Racing">Wood Brothers Racing</label><br />
+            <input
+              type="checkbox"
+              id="Rick Ware Racing"
+              name="Rick Ware Racing"
+              value="Rick Ware Racing"
+            />
+            <label for="Rick Ware Racing">Rick Ware Racing</label><br />
+            <input
+              type="checkbox"
+              id="Richard Childress Racing"
+              name="Richard Childress Racing"
+              value="Richard Childress Racing"
+            />
+            <label for="Richard Childress Racing"
+              >Richard Childress Racing</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Stewart-Haas Racing"
+              name="Stewart-Haas Racing"
+              value="Stewart-Haas Racing"
+            />
+            <label for="Stewart-Haas Racing">Stewart-Haas Racing</label><br />
+            <input
+              type="checkbox"
+              id="Front Row Motorsports"
+              name="Front Row Motorsports"
+              value="Front Row Motorsports"
+            />
+            <label for="Front Row Motorsports">Front Row Motorsports</label
+            ><br />
+            <input
+              type="checkbox"
+              id="JTG Daugherty Racing"
+              name="JTG Daugherty Racing"
+              value="JTG Daugherty Racing"
+            />
+            <label for="JTG Daugherty Racing">JTG Daugherty Racing</label><br />
+            <input
+              type="checkbox"
+              id="Trackhouse Racing"
+              name="Trackhouse Racing"
+              value="Trackhouse Racing"
+            />
+            <label for="Trackhouse Racing">Trackhouse Racing</label><br />
+            <input
+              type="checkbox"
+              id="RFK Racing"
+              name="RFK Racing"
+              value="RFK Racing"
+            />
+            <label for="RFK Racing">RFK Racing</label><br />
+            <input
+              type="checkbox"
+              id="23XI Racing"
+              name="23XI Racing"
+              value="23XI Racing"
+            />
+            <label for="23XI Racing">23XI Racing</label><br />
+            <input
+              type="checkbox"
+              id="Joe Gibbs Racing"
+              name="Joe Gibbs Racing"
+              value="Joe Gibbs Racing"
+            />
+            <label for="Joe Gibbs Racing">Joe Gibbs Racing</label><br />
+            <input
+              type="checkbox"
+              id="Hendrick Motorsports"
+              name="Hendrick Motorsports"
+              value="Hendrick Motorsports"
+            />
+            <label for="Hendrick Motorsports">Hendrick Motorsports</label><br />
+            <input
+              type="checkbox"
+              id="Team Penske"
+              name="Team Penske"
+              value="Team Penske"
+            />
+            <label for="Team Penske">Team Penske</label><br /><br />
+            <label>Stock Car Pro Series</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Eurofarma RC"
+              name="Eurofarma RC"
+              value="Eurofarma RC"
+            />
+            <label for="Eurofarma RC">Eurofarma RC</label><br />
+            <input
+              type="checkbox"
+              id="Ipiranga Racing"
+              name="Ipiranga Racing"
+              value="Ipiranga Racing"
+            />
+            <label for="Ipiranga Racing">Ipiranga Racing</label><br />
+            <input
+              type="checkbox"
+              id="A. Mattheis Vogel Motorsport"
+              name="A. Mattheis Vogel Motorsport"
+              value="A. Mattheis Vogel Motorsport"
+            />
+            <label for="A. Mattheis Vogel Motorsport"
+              >A. Mattheis Vogel Motorsport</label
+            ><br />
+            <input
+              type="checkbox"
+              id="RCM Motorsports"
+              name="RCM Motorsports"
+              value="RCM Motorsports"
+            />
+            <label for="RCM Motorsports">RCM Motorsports</label><br />
+            <input
+              type="checkbox"
+              id="KTF Racing"
+              name="KTF Racing"
+              value="KTF Racing"
+            />
+            <label for="KTF Racing">KTF Racing</label><br />
+            <input
+              type="checkbox"
+              id="Lubrax Podium"
+              name="Lubrax Podium"
+              value="Lubrax Podium"
+            />
+            <label for="Lubrax Podium">Lubrax Podium</label><br />
+            <input
+              type="checkbox"
+              id="Mobil Ale"
+              name="Mobil Ale"
+              value="Mobil Ale"
+            />
+            <label for="Mobil Ale">Mobil Ale</label><br />
+            <input
+              type="checkbox"
+              id="Blau Motorsport"
+              name="Blau Motorsport"
+              value="Blau Motorsport"
+            />
+            <label for="Blau Motorsport">Blau Motorsport</label><br />
+            <input
+              type="checkbox"
+              id="Full Time Sports"
+              name="Full Time Sports"
+              value="Full Time Sports"
+            />
+            <label for="Full Time Sports">Full Time Sports</label><br />
+            <input
+              type="checkbox"
+              id="Crown Racing/TMG"
+              name="Crown Racing/TMG"
+              value="Crown Racing/TMG"
+            />
+            <label for="Crown Racing/TMG">Crown Racing/TMG</label><br />
+            <input
+              type="checkbox"
+              id="Cavaleiro Sports"
+              name="Cavaleiro Sports"
+              value="Cavaleiro Sports"
+            />
+            <label for="Cavaleiro Sports">Cavaleiro Sports</label><br />
+            <input
+              type="checkbox"
+              id="Hot Car Competições"
+              name="Hot Car Competições"
+              value="Hot Car Competições"
+            />
+            <label for="Hot Car Competições">Hot Car Competições</label><br />
+            <input
+              type="checkbox"
+              id="KFT Sports"
+              name="KFT Sports"
+              value="KFT Sports"
+            />
+            <label for="KFT Sports">KFT Sports</label><br />
+            <input
+              type="checkbox"
+              id="Scuderia Chiarelli"
+              name="Scuderia Chiarelli"
+              value="Scuderia Chiarelli"
+            />
+            <label for="Scuderia Chiarelli">Scuderia Chiarelli</label><br />
+            <input
+              type="checkbox"
+              id="Texaco Racing"
+              name="Texaco Racing"
+              value="Texaco Racing"
+            />
+            <label for="Texaco Racing">Texaco Racing</label><br />
+            <input
+              type="checkbox"
+              id="Pole Motorsport"
+              name="Pole Motorsport"
+              value="Pole Motorsport"
+            />
+            <label for="Pole Motorsport">Pole Motorsport</label><br /><br />
+            <label>Rally WRC</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Citroën Total World Team"
+              name="Citroën Total World Team"
+              value="Citroën Total World Team"
+            />
+            <label for="Citroën Total World Team"
+              >Citroën Total World Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="BP Ford World Rally Team "
+              name="BP Ford World Rally Team "
+              value="BP Ford World Rally Team"
+            />
+            <label for="BP Ford World Rally Team ">BP Ford World Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Subaru World Rally Team "
+              name="Subaru World Rally Team "
+              value="Subaru World Rally Team "
+            />
+            <label for="Subaru World Rally Team ">Subaru World Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Munchi's Ford World Rally Team "
+              name="Munchi's Ford World Rally Team "
+              value="Munchi's Ford World Rally Team "
+            />
+            <label for="Munchi's Ford World Rally Team "
+              >Munchi's Ford World Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Stobart M-Sport Ford Rally Team"
+              name="Stobart M-Sport Ford Rally Team"
+              value="Stobart M-Sport Ford Rally Team"
+            />
+            <label for="Stobart M-Sport Ford Rally Team"
+              >Stobart M-Sport Ford Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="OMV-Kronos Citroën World Rally Team"
+              name="OMV-Kronos Citroën World Rally Team"
+              value="OMV-Kronos Citroën World Rally Team"
+            />
+            <label for="OMV-Kronos Citroën World Rally Team"
+              >OMV-Kronos Citroën World Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Toyota Gazoo Racing World Team"
+              name="Toyota Gazoo Racing World Team"
+              value="Toyota Gazoo Racing World Team"
+            />
+            <label for="Toyota Gazoo Racing World Team"
+              >Toyota Gazoo Racing World Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="M-Sport Ford World Rally Team"
+              name="M-Sport Ford World Rally Team"
+              value="M-Sport Ford World Rally Team"
+            />
+            <label for="M-Sport Ford World Rally Team"
+              >M-Sport Ford World Rally Team</label
+            ><br />
+            <input
+              type="checkbox"
+              id="Hyundai Shell Mobis World Rally Team"
+              name="Hyundai Shell Mobis World Rally Team"
+              value="Hyundai Shell Mobis World Rally Team"
+            />
+            <label for="Hyundai Shell Mobis World Rally Team"
+              >Hyundai Shell Mobis World Rally Team</label
+            ><br /><br />
+            <input type="checkbox" id="Nenhuma" name="Nenhuma" value="" />
+            <label for="Nenhuma">Nenhuma</label><br /><br />
+            <!-- Aqui temos que colocar mais Equipes das outras categorias automobilisticas! -->
+            <text>OBS: As demais Equipes serão adcionadas com o tempo!</text>
+          </div>
         </fieldset>
 
         <div class="campo">
-            <br>
-            <label class="riscoDireita"><strong>Conte um pouco da sua experiência:</strong></label>
-            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+          <br />
+          <label class="riscoDireita"
+            >Conte um pouco da sua experiência:</label
+          ><br />
+          <textarea
+            rows="6"
+            style="width: 26em"
+            id="experiencia"
+            name="experiencia"
+          ></textarea>
         </div>
-        
+
         <button class="botao" type="submit">Concluído</button>
-    </form>  
-      
-</body>
+      </form>
+    </div>
+  
+  </body>
+  <div class="ultimafrase">
+    <p>
+      Power By
+    </p>
+    <p class="Creditos">
+      GBL
+    </p>
+  </div>
 </html>

@@ -3,25 +3,65 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Titulo;
+    src: url(riesling.ttf);
+}
+
+@font-face {
+    font-family: SubTitulo;
+    src: url(American\ Captain.ttf);
+}
+
+@font-face {
+    font-family: GBL;
+    src: url(annabel\ 1.ttf);
+}
+
+@font-face{
+    font-family: Magic_Retro;
+    src: url(Magic\ Retro.ttf);
+}
+
+@font-face{
+    font-family: desenhosf1;
+    src: url(Formula\ 1.ttf);
+}
+
+@font-face{
+    font-family: carros;
+    src: url(carros1);
+}
+
 /* Elementos com o ID "titulo" */
 #titulo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #4a8cc5;
-    font-style: oblique;
-    font-size: 40px;
-    margin-left: 15%;
-    margin-top: -2%;
+    font-family: Titulo, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: #bfd7ec; /* #4a8cc5 */
+    font-style: normal;
+    font-size: 70px;
+    margin-left: -2%;
+    margin-top: -3%;
+    font-weight: bold;
     
 } 
 
 /* Elementos com o ID "subtitulo" */
 #subtitulo {
-    font-style: oblique;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-family: SubTitulo, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #bfd7ec;
-    margin-left: auto;
-    filter: drop-shadow(12px 12px 8px #4a8cc5);
+    margin-left: 19px;
+    margin-top: -2%;
+    /* filter: drop-shadow(12px 12px 8px #4a8cc5); */
+}
+
+.desenhosf1 {
+    font-size: 17px;
+    font-family: desenhosf1, sans-serif;
+    color: #bfd7ec;
+    margin-bottom: 5%;
+    margin-top: -2%;
 }
 
 #check{
@@ -36,22 +76,45 @@ fieldset {
 /* Elemento de tag <body> */
 body{
     background-color: #010500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1em;
+    font-family: SubTitulo, sans-serif;
+    font-style:inherit;
+    font-size: 1em; /* 1em */
     color: #bfd7ec; /* #bfd7ec*/
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
-    background: linear-gradient(217deg, rgba(76, 0, 255, 0), rgb(76, 0, 255) 70.71%),
-            linear-gradient(336deg, rgba(48, 48, 107, 0.8), rgba(0,0,255,0) 100%);
+    background-image: url("https://images.unsplash.com/photo-1609013304225-26a1b84ac180?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-transform: uppercase;
+    /*background-image: url("https://images.unsplash.com/photo-1609013304225-26a1b84ac180?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /*background: linear-gradient(217deg, rgba(76, 0, 255, 0), rgb(76, 0, 255) 70.71%),
+            linear-gradient(336deg, rgba(48, 48, 107, 0.8), rgba(0,0,255,0) 100%);*/
                 
     /*background-image: linear-gradient(to bottom, transparent 6%, #193044 15%), url(https://static.vecteezy.com/system/resources/thumbnails/000/103/376/small/crosshatch-style-background-pattern.jpg);
     */
 }
 
+/* No seu arquivo styles.css 
+.container {
+    background-image: url("https://images.unsplash.com/photo-1626995587693-c50c9a5544c6?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}*/
+
+
 .formulario{
-    position: relative;
-    margin-top: 0%;
+    position: center;
+    margin-top: 3%;
+    background: linear-gradient(to bottom, rgb(129, 129, 129), rgb(59, 59, 59));
+    /*background-color: rgb(59, 59, 59);  rgb(129, 129, 129) */
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
 }
 
 .riscoDireita {
@@ -60,9 +123,10 @@ body{
     border-bottom: 3px solid #bfd7ec;
     display: flex;
     justify-content: left;
-    width: 419px;
+    width: 450px;
     right: 0px;
     top: auto;
+    filter: drop-shadow(12px 12px 8px #4a8cc5);
 }
 
 .riscoSub {
@@ -71,16 +135,17 @@ body{
     border-bottom: 3px solid #bfd7ec;
     display: flex;
     justify-content: left;
-    width: 419px;
+    width: 450px;
     right: auto;
     top: auto;
+    filter: drop-shadow(12px 12px 8px #4a8cc5);
 }
 
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
 input, select, textarea, button {
     font-family: sans-serif;
     font-size: 1em;
-    color: #5e5e5e;
+    color: #4a8cc5; /*#5e5e5e*/
     border-radius: 5px;
 }
 
@@ -102,7 +167,7 @@ input, select, textarea, button {
 /* Elementos de classe "campo" de tag <label> */
 .campo label {
     margin-bottom: 0.1em;
-    color: #bfd7ec;
+    color: #bfd7ec; /*#bfd7ec */
     display: block;
 }
 
@@ -113,11 +178,12 @@ fieldset.grupo .campo {
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+.campo input[type="text"], .campo input[type="email"], .campo input[type="sobrenome"],.campo select, .campo textarea {
     padding: 0.1em;
     border: 1px solid #000000;
     box-shadow: 2px 2px 2px rgba(95, 94, 94, 0.2);
     display: block;
+    color:#2e2d2d;
 }
 
 
@@ -129,19 +195,21 @@ fieldset.grupo .campo {
 
 /* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #bfd7ec;
+    background: #fcfcfc;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
-    filter: drop-shadow(12px 12px 8px #4a8cc5);
+    filter: drop-shadow(12px 12px 8px #7cb1df6c) drop-shadow(-12px 12px 8px #7cb1df6c);
+    /*filter: drop-shadow(12px 12px 8px #7aa5ca);
+    filter: drop-shadow(-12px 12px 8px #7aacd8);*/
 }
 
 /* Elemento de classe "botao" */
 .botao {
-    font-size: 1.2em;
+    font-size: 1.3em;
     background: #4a8cc5;
     border: 0;
     margin-bottom: 1em;
-    color: #bfd7ec;
+    color: #bfd7ec00;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -149,7 +217,9 @@ fieldset.grupo .campo {
     top: 95%;
     left: 25%;
     margin-right: -50%;
-    transform: translate(-50%, -20%)
+    transform: translate(50%, 20%);
+    font-family: SubTitulo;
+    text-transform: uppercase;
 }
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
@@ -158,7 +228,7 @@ fieldset.grupo .campo {
     color:#4a8cc5;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
-    filter: drop-shadow(12px 12px 8px #4a8cc5);
+    filter: drop-shadow(10px 10px 6px #7cb1df6c) drop-shadow(-10px 10px 6px #7cb1df6c);
 }
 
 /* Elementos de classe botão e de tag <select> */
@@ -231,4 +301,25 @@ fieldset.grupo .campo {
  */
 #profissionalismo {
     color: #5e5e5e;
+    font-family: SubTitulo;
+}
+
+.Creditos {
+    color: #4a8cc5;
+    font: bold;
+    font-size: 20px;
+    font-style: normal;
+    font-family: GBL, sans-serif;
+
+}
+
+.ultimafrase{
+    color: #4a8cc5;
+    font-size: 20px;
+    position: relative;
+    margin-top: -4%;
+    top: 50%;
+    left: 0%;
+    margin-right: 50%;
+    transform: translate(-105%, -15%)
 }
